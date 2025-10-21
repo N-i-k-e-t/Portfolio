@@ -1,0 +1,15 @@
+@"
+# OS / build
+.DS_Store
+node_modules
+.next
+dist
+.env*
+# Mistakenly-added Git internals (do NOT track)
+FETCH_HEAD
+HEAD
+config
+description
+index
+packed-refs
+"@ | Out-File -Encoding UTF8 .gitignore
