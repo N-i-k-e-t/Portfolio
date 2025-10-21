@@ -458,12 +458,17 @@ section {
     margin-bottom: var(--space-4);
     color: var(--text-primary);
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .section-subtitle {
     font-size: var(--font-size-lg);
     color: var(--text-secondary);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
 }
 
 /* About Section */
@@ -540,22 +545,25 @@ section {
 .step {
     text-align: center;
     padding: var(--space-8);
-    background: white;
+    background: var(--background-card);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-md);
-    transition: transform var(--transition-normal);
-    color: var(--text-on-light);
+    transition: all var(--transition-normal);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
 }
 
 .step:hover {
     transform: translateY(-5px);
+    border-color: var(--border-glow);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .step-number {
     width: 60px;
     height: 60px;
-    background: var(--gradient-primary);
-    color: white;
+    background: var(--gradient-secondary);
+    color: var(--background);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -569,11 +577,13 @@ section {
     font-size: var(--font-size-xl);
     margin-bottom: var(--space-3);
     color: var(--text-primary);
+    font-weight: 600;
 }
 
 .step-description {
     color: var(--text-secondary);
     margin-bottom: 0;
+    opacity: 0.9;
 }
 
 /* Projects Section */
@@ -971,6 +981,22 @@ section {
     filter: grayscale(0%);
 }
 
+.client-logo-placeholder {
+    width: 150px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-card);
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    text-align: center;
+    padding: var(--space-2);
+}
+
 /* Blog Section */
 .blog-preview {
     background: var(--background-alt);
@@ -984,12 +1010,13 @@ section {
 }
 
 .blog-card {
-    background: white;
+    background: var(--background-card);
     border-radius: var(--radius-xl);
     overflow: hidden;
     box-shadow: var(--shadow-md);
     transition: transform var(--transition-normal);
-    color: var(--text-on-light);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
 }
 
 .blog-card:hover {
@@ -1017,11 +1044,13 @@ section {
     font-size: var(--font-size-xl);
     margin-bottom: var(--space-3);
     color: var(--text-primary);
+    font-weight: 600;
 }
 
 .blog-excerpt {
     color: var(--text-secondary);
     margin-bottom: var(--space-4);
+    opacity: 0.9;
 }
 
 .blog-meta {
@@ -1029,7 +1058,7 @@ section {
     justify-content: space-between;
     align-items: center;
     font-size: var(--font-size-sm);
-    color: var(--text-light);
+    color: var(--text-secondary);
 }
 
 .blog-cta {
@@ -1182,8 +1211,8 @@ section {
 
 /* Footer */
 .footer {
-    background: var(--text-primary);
-    color: white;
+    background: var(--background);
+    color: var(--text-primary);
     padding: var(--space-16) 0 var(--space-8);
 }
 
@@ -1195,12 +1224,12 @@ section {
 }
 
 .footer-logo h3 {
-    color: white;
+    color: var(--text-primary);
     margin-bottom: var(--space-2);
 }
 
 .footer-logo p {
-    color: var(--text-light);
+    color: var(--text-secondary);
     margin-bottom: 0;
 }
 
@@ -1211,12 +1240,12 @@ section {
 }
 
 .footer-links a {
-    color: var(--text-light);
+    color: var(--text-secondary);
     transition: color var(--transition-fast);
 }
 
 .footer-links a:hover {
-    color: white;
+    color: var(--text-accent);
 }
 
 .footer-social {
@@ -1226,12 +1255,12 @@ section {
 }
 
 .footer-social a {
-    color: var(--text-light);
+    color: var(--text-secondary);
     transition: color var(--transition-fast);
 }
 
 .footer-social a:hover {
-    color: white;
+    color: var(--text-accent);
 }
 
 .footer-bottom {
@@ -1241,7 +1270,7 @@ section {
 }
 
 .footer-bottom p {
-    color: var(--text-light);
+    color: var(--text-secondary);
     margin-bottom: 0;
 }
 
@@ -1253,11 +1282,11 @@ section {
         left: -100%;
         width: 100%;
         height: calc(100vh - 70px);
-        background: white;
+        background: var(--background);
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        color: var(--text-on-light);
+        color: var(--text-primary);
         padding-top: var(--space-8);
         transition: left var(--transition-normal);
         box-shadow: var(--shadow-lg);
