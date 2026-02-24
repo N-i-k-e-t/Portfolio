@@ -41,7 +41,7 @@ export default function HomePage() {
                 <Shield size={20} className="text-white" />
               </div>
               <div>
-                <h1 className="font-bold text-white text-lg leading-tight">Maevein</h1>
+                <div className="font-bold text-white text-lg leading-tight">Maevein</div>
                 <p className="text-xs text-white/40">Prove your knowledge</p>
               </div>
             </motion.div>
@@ -107,13 +107,13 @@ export default function HomePage() {
               <Sparkles size={12} className="text-purple-400" />
             </motion.div>
 
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight tracking-tight">
-              The AI Won&apos;t Give You
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight tracking-tight">
+              Maevein: The AI Won&apos;t Give You
               <br />
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Answers.
               </span>
-            </h2>
+            </h1>
             <p className="text-lg sm:text-xl text-white/50 mb-2 font-light">
               Prove you already know them.
             </p>

@@ -16,14 +16,29 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Maevein - Educational AI Game',
-  description: 'Master AI, Science, and Coding through immersive gamified challenges.',
-  keywords: 'education, AI, chemistry, biology, physics, python, gamified learning, prompt injection',
+  title: 'Maevein - The Premier AI Gamified Learning Platform',
+  description: 'Master DeepSeek R1, Reasoning Models, Agentic AI, Python, and Science through immersive gamified challenges. Prove your knowledge to AI maeveins and unlock the future.',
+  keywords: 'Maevein, AI Learning, Gamified Education, DeepSeek R1, Reasoning Models, Agentic AI, Prompt Engineering, Cybersecurity Game, AI Mastery 2026, educational AI',
   authors: [{ name: 'Maevein' }],
   openGraph: {
-    title: 'Maevein - The AI Won\'t Give You Answers. Prove You Already Know Them.',
-    description: 'Gamified educational AI platform with 6 modules and 42 levels.',
+    title: 'Maevein - AI Gamified Learning platform | Master Knowledge through Play',
+    description: 'Master AI, Science, and Coding through immersive gamified challenges with 6+ modules and 42+ levels.',
+    url: 'https://maevein.vercel.app',
+    siteName: 'Maevein',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Maevein - The Premier AI Gamified Learning Platform',
+    description: 'Master AI, Science, and Coding through immersive gamified challenges.',
+    creator: '@maevein_ai',
+  },
+  alternates: {
+    canonical: 'https://maevein.vercel.app',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
